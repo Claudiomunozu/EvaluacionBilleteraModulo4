@@ -18,7 +18,7 @@ public class Login_page extends AppCompatActivity {
 
         // Abrir nueva activity
 
-        ImageButton boton2 = findViewById(R.id.imageButton2);
+        ImageButton boton2 = findViewById(R.id.sendhome);
 
         boton2.setOnClickListener(new View.OnClickListener() {
             @Override
