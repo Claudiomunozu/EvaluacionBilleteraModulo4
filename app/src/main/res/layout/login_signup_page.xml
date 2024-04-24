@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:textAlignment="center"
-    tools:context=".MainActivity">
+    tools:context=".Login_Singup_Page">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,53 +15,41 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="409dp"
-            android:layout_height="889dp"
+            android:layout_height="888dp"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0"
             app:srcCompat="@mipmap/fondo" />
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="409dp"
-            android:layout_height="57dp"
-            android:background="?attr/colorPrimary"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.001"
-            tools:layout_editor_absoluteX="1dp" />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="107dp"
-            android:layout_height="125dp"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.091"
-            app:srcCompat="@mipmap/dinero" />
+            app:layout_constraintVertical_bias="0.146"
+            app:srcCompat="@mipmap/logobilletera" />
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="160dp"
-            android:layout_height="42dp"
+            android:layout_width="187dp"
+            android:layout_height="86dp"
+            android:fontFamily="sans-serif"
             android:text="Billetera Virtual "
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:textSize="20sp"
+            android:textSize="24sp"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.26" />
+            app:layout_constraintVertical_bias="0.38" />
 
         <EditText
             android:id="@+id/editTextText"
@@ -83,6 +71,7 @@
             android:id="@+id/button"
             android:layout_width="339dp"
             android:layout_height="46dp"
+            android:backgroundTint="#631C9A"
             android:text="Crear una cuenta nueva"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/imageView3"
@@ -104,7 +93,7 @@
             app:layout_constraintVertical_bias="0.918" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/sendlogin"
             android:layout_width="49dp"
             android:layout_height="50dp"
             android:backgroundTint="#FFFFFF"
