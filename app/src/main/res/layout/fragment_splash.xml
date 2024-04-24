@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/background"
-    tools:context=".Splash_Screen">
+    tools:context=".Splash">
 
     <ImageView
         android:id="@+id/logoapp"
@@ -17,13 +17,27 @@
         android:background="@mipmap/logobilletera" />
 
     <TextView
+        android:id="@+id/mensajesplash"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/logoapp"
         android:text="@string/billetera_digital_titulo"
+        android:textStyle="italic"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="30dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mensajesplash"
+        android:text="pulsa para continuar"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="italic"
 
         />
 
@@ -31,18 +45,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageButton
-            android:id="@+id/sendlogin"
-            android:layout_width="49dp"
-            android:layout_height="50dp"
-            android:backgroundTint="#631C9A"
-            android:scaleType="centerCrop"
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="71dp"
+            android:layout_height="64dp"
+            android:layout_marginBottom="164dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.956"
-            app:srcCompat="@mipmap/flechair" />
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

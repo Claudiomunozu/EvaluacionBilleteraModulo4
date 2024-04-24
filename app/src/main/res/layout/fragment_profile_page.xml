@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home_Page">
+    tools:context=".ProfilePage">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,8 +13,8 @@
 
         <ImageView
             android:id="@+id/fondos"
-            android:layout_width="409dp"
-            android:layout_height="889dp"
+            android:layout_width="411dp"
+            android:layout_height="891dp"
             app:srcCompat="@mipmap/pantallabicolor"
             tools:layout_editor_absoluteX="1dp"
             tools:layout_editor_absoluteY="1dp" />
@@ -37,7 +37,7 @@
             android:id="@+id/saludoprofile"
             android:layout_width="126dp"
             android:layout_height="44dp"
-            android:text="Mi Perfil"
+            android:text="@string/mi_perfil"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
@@ -53,7 +53,7 @@
             android:id="@+id/nombreprofile"
             android:layout_width="141dp"
             android:layout_height="35dp"
-            android:text="Pamela Alkemy"
+            android:text="@string/pamela_alkemy"
             android:textAlignment="center"
             android:textColor="#CFB6B6"
             android:textSize="18sp"
@@ -81,7 +81,7 @@
                 android:backgroundTint="#BBB0E1"
                 android:drawableLeft="@mipmap/profile_icon"
                 android:drawableRight="@mipmap/arrow_icon"
-                android:text="Mi Informacion" />
+                android:text="@string/mi_informacion" />
 
             <Button
                 android:id="@+id/tarjetas"
@@ -90,7 +90,7 @@
                 android:backgroundTint="#BBB0E1"
                 android:drawableLeft="@mipmap/card_icon"
                 android:drawableRight="@mipmap/arrow_icon"
-                android:text="Mis Tarjetas" />
+                android:text="@string/mis_tarjetas" />
 
             <Button
                 android:id="@+id/opciones"
@@ -99,7 +99,7 @@
                 android:backgroundTint="#BBB0E1"
                 android:drawableLeft="@mipmap/settings_icon"
                 android:drawableRight="@mipmap/arrow_icon"
-                android:text="Opciones" />
+                android:text="@string/opciones" />
 
             <Button
                 android:id="@+id/ayuda"
@@ -108,7 +108,7 @@
                 android:backgroundTint="#BBB0E1"
                 android:drawableLeft="@mipmap/help_icon"
                 android:drawableRight="@mipmap/arrow_icon"
-                android:text="Centro de Ayuda" />
+                android:text="@string/centro_de_ayuda" />
         </LinearLayout>
 
         <ImageView

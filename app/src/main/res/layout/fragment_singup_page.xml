@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Signup_Page">
+    tools:context=".SingupPage">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,8 +13,8 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="409dp"
-            android:layout_height="889dp"
+            android:layout_width="411dp"
+            android:layout_height="891dp"
             app:srcCompat="@mipmap/fondo"
             tools:layout_editor_absoluteX="1dp"
             tools:layout_editor_absoluteY="1dp" />
@@ -32,10 +32,10 @@
             app:srcCompat="@mipmap/flechafondo" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/yatienescuentasinguppage"
             android:layout_width="222dp"
             android:layout_height="35dp"
-            android:text="Ya tienes una cuenta ??"
+            android:text="@string/ya_tienes_una_cuenta"
             android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -44,35 +44,22 @@
             app:layout_constraintVertical_bias="0.913" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/crearcuenta"
             android:layout_width="339dp"
             android:layout_height="46dp"
             android:backgroundTint="#631C9A"
-            android:text="Crear Cuenta"
+            android:text="@string/crear_cuenta"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.848" />
 
-        <ImageButton
-            android:id="@+id/sendlogin"
-            android:layout_width="49dp"
-            android:layout_height="50dp"
-            android:backgroundTint="#FFFFFF"
-            android:scaleType="centerCrop"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.956"
-            app:srcCompat="@mipmap/flechair" />
-
         <TextView
             android:id="@+id/textView2"
             android:layout_width="323dp"
             android:layout_height="93dp"
-            android:text="Registrarse y empezar a transferir"
+            android:text="@string/registrarse_y_empezar_a_transferir"
             android:textAlignment="textStart"
             android:textColor="#CFB6B6"
             android:textSize="34sp"
@@ -94,50 +81,55 @@
             app:layout_constraintVertical_bias="0.343">
 
             <EditText
-                android:id="@+id/editTextText2"
+                android:id="@+id/editText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Ingresar Nombre"
+                android:hint="@string/ingresar_nombre"
+                android:textStyle="italic"
                 android:inputType="text"
                 android:textColorHint="#CFB6B6" />
 
             <EditText
-                android:id="@+id/editTextText4"
+                android:id="@+id/editText2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Ingresar Apellido"
+                android:hint="@string/ingresar_apellido"
+                android:textStyle="italic"
                 android:inputType="text"
                 android:textColorHint="#CFB6B6" />
 
             <EditText
-                android:id="@+id/editTextTextEmailAddress2"
+                android:id="@+id/editTextEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Ingresar Correo"
+                android:hint="@string/ingresar_correo"
+                android:textStyle="italic"
                 android:inputType="textEmailAddress"
                 android:textColorHint="#CFB6B6" />
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
-                android:layout_height="47dp"
+                android:layout_height="43dp"
                 android:drawableRight="@mipmap/ic_launcher_foreground"
                 android:ems="10"
-                android:hint="Ingresar Contraseña"
+                android:hint="@string/ingresar_contrase_a"
+                android:textStyle="italic"
                 android:inputType="textPassword"
                 android:textColorHint="#CFB6B6"
                 tools:visibility="visible" />
 
             <EditText
-                android:id="@+id/editTextTextPassword3"
+                android:id="@+id/editTextPassword2"
                 android:layout_width="match_parent"
-                android:layout_height="47dp"
+                android:layout_height="43dp"
                 android:drawableRight="@mipmap/ic_launcher_foreground"
                 android:ems="10"
-                android:hint="Reingresar Contraseña"
+                android:hint="@string/reingresar_contrase_a"
+                android:textStyle="italic"
                 android:inputType="textPassword"
                 android:textColorHint="#CFB6B6" />
 
